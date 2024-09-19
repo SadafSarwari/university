@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sadaf Sarwari's work</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f0f8; /* Light lavender background */
+        color: #343a40;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: #6f42c1; /* Lavender color */
+      }
+
+      .container {
+        width: 90%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      select {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 2px solid #e3d8f0; /* Light lavender border */
+        border-radius: 5px;
+        background-color: #f8f4fc; /* Very light lavender background */
+        font-size: 16px;
+        transition: border-color 0.3s;
+      }
+
+      select:focus {
+        border-color: #6f42c1; /* Darker lavender on focus */
+        outline: none;
+        background-color: #fff;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      th,
+      td {
+        border: 1px solid #dee2e6;
+        padding: 12px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #6f42c1; /* Lavender header */
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f8f4fc; /* Very light lavender for even rows */
+      }
+
+      tr:hover {
+        background-color: #e9d8f5; /* Light lavender on hover */
+      }
+
+      .info-message {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 18px;
+        color: #28a745; /* Green for messages */
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          width: 100%;
+          padding: 20px;
+        }
+
+        select {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>University Students Portal</h1>
+      <select id="university-select">
+        <option value="">Select a University</option>
+      </select>
+      <select id="department-select" disabled>
+        <option value="">Select a Department</option>
+      </select>
+      <select id="specialization-select" disabled>
+        <option value="">Select a Specialization</option>
+      </select>
+      <table id="information-table">
+        <thead>
+          <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+      <div id="info-message" class="info-message"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
